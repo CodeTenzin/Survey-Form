@@ -33,6 +33,10 @@ fieldset {
   margin: 0;
 }
 
+.container {
+  margin: 20px 0;
+}
+
 .block,
 select {
   display: block;
@@ -43,7 +47,7 @@ select {
 label,
 textarea {
   display: block;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 input[type="text"],
@@ -52,7 +56,6 @@ input[type="number"],
 select,
 textarea {
   width: 100%;
-  margin: 10 auto;
   border-radius: 5px;
   outline: none;
   padding: 5px 10px;
@@ -63,7 +66,7 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
-input[type="submit"] {
+#submit {
   border-radius: 10px;
   border: none;
   margin: 10px 0;
