@@ -1,7 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
   height: 100vh;
-  margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
   font-family: Tahoma;
@@ -15,18 +18,19 @@ p {
 }
 
 form {
-  width: 60vh;
   max-width: 500px;
   min-width: 300px;
   margin: 0 auto;
   padding: 10px 20px;
   border: 1px solid #f5f6f7;
+  border-radius: 10px;
 }
 
 fieldset {
   border: none;
   border-bottom: 2px solid #f5f6f7;
   padding-top: 5px;
+  margin: 0;
 }
 
 .block,
@@ -40,4 +44,32 @@ label,
 textarea {
   display: block;
   margin: 20px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  margin: 10 auto;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  outline: 0;
+  padding: 10px 15px;
+  width: 100%;
+  color: white;
+  background: green;
 }
